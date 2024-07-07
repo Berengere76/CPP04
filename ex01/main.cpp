@@ -45,5 +45,19 @@ int main()
 	delete newDog;
 	delete copyDog;
 
+	std::cout << BLUE << "*****COPY*****" << NC << std::endl;
+	Cat *newCat = new Cat;
+	newCat->getBrain()->setIdea(0, "I want to poop");
+	newCat->getBrain()->setIdea(1, "I want to pee");
+	newCat->getBrain()->setIdea(2, "Feed me plz");
+	Cat *copyCat = new Cat;
+	*copyCat = *newCat;
+	std::cout << copyCat->getBrain()->getIdea(0) << std::endl;
+	std::cout << copyCat->getBrain()->getIdea(1) << std::endl;
+	std::cout << copyCat->getBrain()->getIdea(2) << std::endl;
+
+	delete newCat;
+	delete copyCat;
+
 	return 0; 
 }

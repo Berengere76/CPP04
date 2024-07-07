@@ -1,4 +1,4 @@
-NAME = abstactclasses
+NAME = idontwantosettheworldonfire
 
 SRC =	main.cpp \
 		Cat.cpp \

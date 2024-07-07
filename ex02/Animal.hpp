@@ -15,6 +15,6 @@ class Animal
 		Animal &operator=(const Animal &toCopy);
 		virtual ~Animal();
 
-		virtual void makeSound() const = 0;
+		virtual void makeSound() const;
 		std::string getType() const;
 };

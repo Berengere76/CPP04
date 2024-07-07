@@ -8,12 +8,14 @@ Animal::Animal(): type("Animal")
 Animal::Animal(const Animal &toCopy)
 {
 	std::cout << GREEN << "Animal copy constructor called" << NC << std::endl;
-	*this = toCopy;
+	this->type = toCopy.type;
 }
 
 Animal &Animal::operator=(const Animal &toCopy)
 {
 	std::cout << GREEN << "Animal assignation operator called" << NC << std::endl;
+	if (this == &toCopy)
+		return *this;
 	this->type = toCopy.type;
 	return *this;
 }
