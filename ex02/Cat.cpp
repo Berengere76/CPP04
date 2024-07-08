@@ -1,6 +1,6 @@
 #include "Cat.hpp"
 
-Cat::Cat(): Animal()
+Cat::Cat(): AAnimal()
 {
 	std::cout << PURPLE << "Cat constructor called" << NC << std::endl;
 	this->type = "Cat";
@@ -12,7 +12,7 @@ Cat::Cat(): Animal()
 	}
 }
 
-Cat::Cat(const Cat &toCopy): Animal(toCopy)
+Cat::Cat(const Cat &toCopy): AAnimal(toCopy)
 {
     std::cout << PURPLE << "Cat copy constructor called" << NC << std::endl;
     this->brain = new Brain(*toCopy.brain);
@@ -29,7 +29,7 @@ Cat &Cat::operator=(const Cat &toCopy)
     if (this == &toCopy)
         return *this;
     // Call base class assignment operator
-    Animal::operator=(toCopy);
+    AAnimal::operator=(toCopy);
 
     this->type = toCopy.type;
 

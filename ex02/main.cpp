@@ -9,7 +9,7 @@ int main()
 	std::cout << YELLOW << "----------------------" << NC << std::endl;
 
 	std::cout << BLUE << "*****CONSTRUCTORS*****" << NC << std::endl;
-	const Animal *animals[10];
+	const AAnimal *animals[10];
 	for (int i = 0; i < 5; i++)
 		animals[i] = new Dog();
 	for (int i = 5; i < 10; i++)
@@ -56,7 +56,7 @@ int main()
 	std::cout << copyCat->getBrain()->getIdea(1) << std::endl;
 	std::cout << copyCat->getBrain()->getIdea(2) << std::endl;
 
-	// Animal test = Animal();
+	// AAnimal test = AAnimal();
 
 	delete newCat;
 	delete copyCat;

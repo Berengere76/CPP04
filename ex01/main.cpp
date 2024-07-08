@@ -38,9 +38,9 @@ int main()
 
 	std::cout << BLUE << "*****COPY*****" << NC << std::endl;
 	Dog *copyDog = new Dog(*newDog);
-	std::cout << copyDog->getBrain()->getIdea(0) << std::endl;
-	std::cout << copyDog->getBrain()->getIdea(1) << std::endl;
-	std::cout << copyDog->getBrain()->getIdea(2) << std::endl;
+	std::cout << YELLOW << "Copy Dog Ideas: " << copyDog->getBrain()->getIdea(0) << NC << std::endl;
+	std::cout << YELLOW << "Copy Dog Ideas: " << copyDog->getBrain()->getIdea(1) << NC << std::endl;
+	std::cout << YELLOW << "Copy Dog Ideas: " << copyDog->getBrain()->getIdea(2) << NC << std::endl;
 
 	delete newDog;
 	delete copyDog;
@@ -52,15 +52,15 @@ int main()
 	newCat->getBrain()->setIdea(2, "Feed me plz");
 	Cat *copyCat = new Cat;
 	*copyCat = *newCat;
-	std::cout << copyCat->getBrain()->getIdea(0) << std::endl;
-	std::cout << copyCat->getBrain()->getIdea(1) << std::endl;
-	std::cout << copyCat->getBrain()->getIdea(2) << std::endl;
+	std::cout << YELLOW << "Copy Cat Ideas: " << copyCat->getBrain()->getIdea(0) << NC << std::endl;
+	std::cout << YELLOW << "Copy Cat Ideas: " << copyCat->getBrain()->getIdea(1) << NC << std::endl;
+	std::cout << YELLOW << "Copy Cat Ideas: " << copyCat->getBrain()->getIdea(2) << NC << std::endl;
 
 	delete newCat;
 	delete copyCat;
 
-	Dog basic;
-	Dog tmp = basic;
+	// Dog basic;
+	// Dog tmp = basic;
 	
 	return 0; 
 }

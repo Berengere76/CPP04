@@ -48,8 +48,8 @@ Cat &Cat::operator=(const Cat &toCopy)
 
 Cat::~Cat()
 {
-	std::cout << PURPLE << "Cat destructor called" << NC << std::endl;
-	delete this->brain;
+    delete this->brain;
+	std::cout << PURPLE << "Cat destructor called" << NC << std::endl;	
 }
 
 void Cat::makeSound() const
