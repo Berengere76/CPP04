@@ -56,6 +56,8 @@ int main()
 	std::cout << copyCat->getBrain()->getIdea(1) << std::endl;
 	std::cout << copyCat->getBrain()->getIdea(2) << std::endl;
 
+	// Animal test = Animal();
+
 	delete newCat;
 	delete copyCat;
 

@@ -59,5 +59,8 @@ int main()
 	delete newCat;
 	delete copyCat;
 
+	Dog basic;
+	Dog tmp = basic;
+	
 	return 0; 
 }

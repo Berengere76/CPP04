@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <string>
+#include <stdlib.h>
 #include "colors.h"
 
 class Animal

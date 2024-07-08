@@ -8,7 +8,7 @@ Brain::Brain()
 Brain::Brain(const Brain &toCopy)
  {
         std::cout << "Brain copy constructor called" << std::endl;
-        for (int i = 0; i < 100; ++i) 
+        for (int i = 0; i < 100; i++) 
 		{
             ideas[i] = toCopy.ideas[i];
         }
@@ -19,7 +19,7 @@ Brain &Brain::operator=(const Brain &toCopy)
 	std::cout << "Brain assignation operator called" << std::endl;
     if (this != &toCopy) 
 	{
-    	for (int i = 0; i < 100; ++i) 
+    	for (int i = 0; i < 100; i++) 
 		{
             ideas[i] = toCopy.ideas[i];
         }
